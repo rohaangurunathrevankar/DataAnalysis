@@ -1,18 +1,26 @@
-This project does analysis of csv data.
+# DataProcessor: Car Sales Analysis Tool
 
+**DataProcessor** is a high-performance C++ utility designed to parse and analyze large-scale CSV datasets. It utilizes chunk-based processing and concurrent execution to handle massive files efficiently, optimizing memory usage while performing complex aggregations and financial calculations.
+
+## 📂 Project Structure
+
+The project is organized as follows:
+
+```text
 DataProcessor
--CMakeLists.txt #cmake build config
--Readme.md #execution steps
--include
-    -data_parser.hpp.  #for Csv file parsing header file
-    -data_analyzer.hpp #nalsysis header file
--src
-    -data_parser.cpp.  #for Csv file parsing source file
-    -data_analyzer.cpp #nalsysis source file
--test
-    -test_data_parser.cpp. #to test parsing csv logic
-    -test_data_analyzer.cpp #to test analysis logic
--data/sample.csv
+├── CMakeLists.txt           # CMake build configuration
+├── Readme.md                # Project documentation and execution steps
+├── include/                 # Header files
+│   ├── data_parser.hpp      # CSV file parsing interface
+│   └── data_analyzer.hpp    # Data analysis interface
+├── src/                     # Source files
+│   ├── data_parser.cpp      # CSV parsing implementation
+│   └── data_analyzer.cpp    # Analysis logic implementation
+├── test/                    # Unit tests
+│   ├── test_data_parser.cpp # Tests for CSV parsing logic
+│   └── test_data_analyzer.cpp # Tests for analysis calculations
+└── data/
+    └── sample.csv           # Sample dataset for testing
 ============================================================================================
 
 Execution steps:
